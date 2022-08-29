@@ -25,7 +25,7 @@ async function doDemo() {
   await client.connect();
 
   //Change the table name to match one in your heroku database!
-  const result = await client.query("SELECT *  FROM words;");
+  const result = await client.query("SELECT *  FROM signatures;");
   for (let row of result.rows) {
     console.log(row);
   }

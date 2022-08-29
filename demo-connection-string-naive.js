@@ -9,7 +9,8 @@ async function doDemo() {
 
   //NOTE: the following connection string points at a fictitious database.
   const connectionString =
-    "postgresql://dbuser:secretpassword@database.server.com:5432/mydb";
+    "postgresql://academy@localhost:5432/demos";
+  
 
   const client = new Client({
     connectionString,
